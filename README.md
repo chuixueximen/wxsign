@@ -1,11 +1,11 @@
 # wxsign
-[![Build Status](https://travis-ci.org/usth/wxsign.svg?branch=master)](https://travis-ci.org/usthooz/wxsign)
-[![Go Report Card](https://goreportcard.com/badge/github.com/usthooz/wxsign)](https://goreportcard.com/report/github.com/usthooz/wxsign)
-[![GoDoc](http://godoc.org/github.com/usthooz/wxsign?status.svg)](http://godoc.org/github.com/usthooz//wxsign)
+[![Build Status](https://travis-ci.org/usth/wxsign.svg?branch=master)](https://travis-ci.org/chuixueximen/wxsign)
+[![Go Report Card](https://goreportcard.com/badge/github.com/chuixueximen/wxsign)](https://goreportcard.com/report/github.com/chuixueximen/wxsign)
+[![GoDoc](http://godoc.org/github.com/chuixueximen/wxsign?status.svg)](http://godoc.org/github.com/chuixueximen//wxsign)
 
 微信公众号二次分享、请求Js签名.
 
-- 更多逻辑已经迁移到[owechat](https://github.com/usthooz/owechat)
+- 更多逻辑已经迁移到[owechat](https://github.com/chuixueximen/owechat)
 
 ## 功能
 - 获取微信分享所需要的js签名信息
@@ -24,7 +24,7 @@
 ## 安装
 
 ```
-go get github.com/usthooz/wxsign
+go get github.com/chuixueximen/wxsign
 ```
 
 ## 使用
@@ -35,7 +35,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/usthooz/wxsign"
+	"github.com/chuixueximen/wxsign"
 	redis "gopkg.in/redis.v3"
 )
 

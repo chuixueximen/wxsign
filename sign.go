@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/usthooz/gutil"
+	"github.com/chuixueximen/gutil"
 )
 
 // GetJsSign GetJsSign

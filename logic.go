@@ -5,7 +5,6 @@ import (
 	"time"
 
 	simplejson "github.com/bitly/go-simplejson"
-	"github.com/usthooz/gutil/http"
 )
 
 // GetAccessToken 获取普通api调用需要的access_token 因为有次数限制，需要缓存
