@@ -2,9 +2,9 @@ package wxsign
 
 import (
 	"fmt"
-	"time"
-
 	simplejson "github.com/bitly/go-simplejson"
+	xhttp "github.com/chuixueximen/gutil/http"
+	"time"
 )
 
 // GetAccessToken 获取普通api调用需要的access_token 因为有次数限制，需要缓存
