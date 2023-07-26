@@ -45,7 +45,8 @@ func (wSign *WxSign) GetAccessToken() (accessToken string, err error) {
 	} else {
 		expire = expire - 100
 	}
-	wSign.PushTokenByCache(resp.GetPath("access_token").MustString(), time.Duration(expire)*time.Second)
+	accessToken = resp.GetPath("access_token").MustString()
+	wSign.PushTokenByCache(accessToken, time.Duration(expire)*time.Second)
 	return
 }
 
@@ -95,6 +96,7 @@ func (wSign *WxSign) GetTicket() (ticket string, err error) {
 	} else {
 		expire = expire - 100
 	}
-	wSign.PushTicketByCache(resp.GetPath("ticket").MustString(), time.Duration(expire)*time.Second)
+	ticket = resp.GetPath("ticket").MustString()
+	wSign.PushTicketByCache(ticket, time.Duration(expire)*time.Second)
 	return
 }
