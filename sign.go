@@ -3,11 +3,10 @@ package wxsign
 import (
 	"crypto/sha1"
 	"fmt"
+	"github.com/chuixueximen/gutil"
 	"strconv"
 	"strings"
 	"time"
-
-	"github.com/chuixueximen/gutil"
 )
 
 // GetJsSign GetJsSign
