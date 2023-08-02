@@ -38,7 +38,7 @@ func (wSign *WxSign) GetJsSign(url string) (*WxJsSign, error) {
 func Signature(jsTicket, noncestr, timestamp, url string) string {
 	h := sha1.New()
 	h.Write([]byte(fmt.Sprintf("jsapi_ticket=%s&noncestr=%s&timestamp=%s&url=%s", jsTicket, noncestr, timestamp, url)))
-	fmt.Printf("打印：\n\njsapi_ticket=%s&noncestr=%s&timestamp=%s&url=%s", jsTicket, noncestr, timestamp, url)
+	//fmt.Printf("打印：\n\njsapi_ticket=%s&noncestr=%s&timestamp=%s&url=%s", jsTicket, noncestr, timestamp, url)
 	return fmt.Sprintf("%x", h.Sum(nil))
 }
 
